@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+
+        android:layout_margin="10dp"
+        android:layout_height="300sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/imageName"
+                android:layout_width="match_parent"
+                android:hint="image name"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/purple_700"
+                android:layout_height="30sp"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50sp">
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:text="Share"
+                    android:onClick="getShare"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/black"
+                    android:gravity="start|center"
+                    android:drawableStart="@drawable/ic_baseline_share_24"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/comments"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:text="Comments"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    android:gravity="start|center"
+                    android:drawableStart="@drawable/ic_baseline_message_24"
+                    android:layout_height="match_parent"
+                    tools:ignore="UsingOnClickInXml" />
+                <TextView
+                    android:id="@+id/likes"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:text="Like"
+                    android:textColor="@color/black"
+                    android:drawablePadding="5dp"
+                    android:gravity="start|center"
+                    android:drawableStart="@drawable/ic_baseline_favorite_border_24"
+                    android:layout_height="match_parent"
+                    tools:ignore="UsingOnClickInXml" />
+                <TextView
+                    android:id="@+id/download"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.2"
+                    android:drawablePadding="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:drawableEnd="@drawable/ic_baseline_download_24"
+                    android:layout_height="match_parent"
+                    tools:ignore="UsingOnClickInXml" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
